@@ -1,18 +1,17 @@
 /**
- * Created on 14.10.14.
+ * Created on 15.10.14.
  */
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var userSchema = new Schema({
-	name: {
+	login: {
 		type: String,
-		unique: true,
 		required: true
 	},
-	age: {
-		type: Number,
-		validate: [/[0-9]/, 'invalid age']
+	password: {
+		type: String,
+		required: true
 	}
 });
 

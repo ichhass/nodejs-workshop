@@ -56,7 +56,6 @@ function addUser(req, res) {
 					}
 
 					var response = {};
-
 					for (var key in err.errors) {
 						response[key] = err.errors[key].message;
 					}

@@ -15,7 +15,7 @@ function errorHandler(code, res) {
 			break;
 		case 11000:
 			res.statusCode = 500;
-			res.end(http.STATUS_CODES[code]);
+			res.end(http.STATUS_CODES[500]);
 			break;
 		default:
 			res.statusCode = 500;
